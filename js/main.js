@@ -13,7 +13,7 @@ var Company = {
 	setEventListeners: function() {
 		// Event listener for showing info.
 		$('.company').on('click', function() {
-			Company.showInfo($(this));
+			Company.toggleInfo($(this));
 		})
 
 		// Event listener for hiding info.
@@ -25,13 +25,14 @@ var Company = {
 		// Set values for each company.
 		console.log('Creating new company.');
 	},
-	showInfo: function ($el) {
+	toggleInfo: function ($el) {
 		// Show popup info.
-		$el.find('.hidden-content').show();
+		let hiddenContent = $el.find('.hidden-content');
+		hiddenContent.toggleClass('hide');
 	},
 	hideInfo: function ($el) {
 		// Hide popup info.
-		$el.find(.hidden-content).hide();
+		$el.find('.hidden-content').hide();
 	},
 	highlightCompany: function ($el) {
 
