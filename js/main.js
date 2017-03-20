@@ -6,6 +6,11 @@ function init() {
 
 	// Set eventlisteners on company elements.
 	Company.setEventListeners();
+
+	$('.plattegrond').click(function(){
+		$('#plattegrond').fadeIn("slow");
+		$('#welcome').fadeOut("fast");
+	});
 }
 
 
