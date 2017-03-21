@@ -197,30 +197,66 @@ section#plattegrond {
 				    width: 18%;
 				    height: 50px;
 				    cursor: pointer;
-				    .display {
-				    	display: none;
-				    	position: fixed;
-					    background: #fff;
-					    color: #333;
-					    top: 50%;
-					    left: 50%;
-					    transform: translateY(-50%) translateX(-50%);
-				        width: 1200px;
-					    height: auto;
-					    padding: 25px;
-					    box-sizing: border-box;
-					    border-radius: 4px;
-				        cursor: auto;
-				        .company-logo {
-				        	display: block;
-				        	margin: 0 auto 40px;
-				        }
-					    h1 {
-						    font-size: 36px;
-						    letter-spacing: 1.6px;
-						    padding-bottom: 20px;
-						    text-align: center;
-						}
+				}
+			}
+			.company-opacity {
+			    background: #000000;
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100vh;
+			    z-index: 1;
+			    opacity: 0.5;
+			    display: none;
+			    cursor: pointer;
+			}
+			.company-contents {
+			    position: relative;
+    			z-index: 2;
+				.display {
+			    	display: none;
+			    	position: fixed;
+				    background: #fff;
+				    color: #333;
+				    top: 50%;
+				    left: 50%;
+				    transform: translateY(-50%) translateX(-50%);
+			        width: 1200px;
+				    height: auto;
+				    padding: 25px;
+				    box-sizing: border-box;
+				    border-radius: 4px;
+			        cursor: auto;
+			        .close-display {
+					    position: absolute;
+					    right: 0;
+					    top: 0;
+					    background: #e24f49;
+					    width: 16px;
+					    height: 16px;
+					    padding: 8px;
+					    cursor: pointer;
+					}
+			        .company-logo {
+			        	display: block;
+			        	margin: 0 auto 40px;
+		        	    width: 250px;
+					    object-fit: cover;
+					    height: 250px;
+			        }
+				    h1 {
+					    font-size: 36px;
+					    letter-spacing: 1.6px;
+					    padding-bottom: 30px;
+					    text-align: center;
+					}
+					p{
+						font-size: 16px;
+						margin-bottom: 20px;
+					}
+					.slick-slider {
+					    margin-bottom: 0px;
 						.slick-slide {
 							img {
 							    display: block;
@@ -229,8 +265,8 @@ section#plattegrond {
 							    object-fit: cover;
 							}
 						}
-				    }
-				}
+					}
+			    }
 			}
 	    }
 	}

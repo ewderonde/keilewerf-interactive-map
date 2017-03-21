@@ -12,13 +12,19 @@ function init() {
 	});
 
 	$('.company.man-van-hout').click(function(){
-		$('.company.man-van-hout .display').fadeIn();
+		$('.company-opacity').fadeIn();
+		$('.display.man-van-hout').fadeIn();
 		$('.slider').slick({
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  autoplay: true,
 		  autoplaySpeed: 5000,
 		});
+	});
+
+	$('.close-display, .company-opacity').on('click', function(){
+		$('.display.man-van-hout').fadeOut();
+		$('.company-opacity').fadeOut();
 	});
 }
 
