@@ -40,7 +40,7 @@ $companies = $repository->getCompanies();
     var update = function() {
         $.ajax({
             type: "GET",
-            url: '/keilewerf/php/companies.php',
+            url: BASE_URL + '/php/companies.php',
             success: function (result) {
                 renderCompanies(result);
             },
