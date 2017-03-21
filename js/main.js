@@ -26,6 +26,9 @@ function init() {
 		$('.display.man-van-hout').fadeOut();
 		$('.company-opacity').fadeOut();
 	});
+
+	$('#reset-search').click(function() { Methods.resetSearchTag() });
+
 }
 
 
@@ -56,10 +59,14 @@ var Methods = {
 	},
 	highlightCompanies: function (companies) {
 		if(currentCategory != lastCategory) {
+			$('.company').removeClass('highlight');
+
 			for (var i = 0; i < companies.length; i++) {
 				var companyContainer = $('.'+companies[i].tag);
 				// companyContainer.toggle( "highlight" );
 				companyContainer.effect("highlight", {}, 10000);
+
+				companyContainer.addClass('highlight');
 				console.log(companyContainer);
 			}
 
@@ -73,9 +80,13 @@ var Methods = {
 		$('#selected-tag').removeClass('hidden');
 	},
 	resetSearchTag: function () {
+		console.log('Reset search tag.');
 		var $selectedTag = $('#selected-tag');
 		$selectedTag.addClass('hidden');
 		Methods.resetHighlights();
+
+		currentCategory = '';
+		lastCategory = '-';
 	},
 	resetHighlights: function () {
 		var $companies = $('.company');
