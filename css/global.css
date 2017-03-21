@@ -800,6 +800,10 @@ input {
   border-radius: 0 !important;
 }
 
+.hidden {
+  display: none;
+}
+
 .opacity {
   background: #000000;
   position: fixed;
@@ -924,13 +928,46 @@ section#plattegrond .loodsen .loods .map {
   background: #fff;
   height: 600px;
   border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
-section#plattegrond .loodsen .loods:nth-child(2) .map {
-  width: 200px;
-  background-color: transparent;
+section#plattegrond .loodsen .loods .map .company {
+  background: crimson;
+  width: 18%;
+  height: 50px;
+  cursor: pointer;
+}
+section#plattegrond .loodsen .loods .map .company .display {
+  display: none;
+  position: fixed;
+  background: #fff;
+  color: #333;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 1200px;
+  height: auto;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: auto;
+}
+section#plattegrond .loodsen .loods .map .company .display .company-logo {
+  display: block;
+  margin: 0 auto 40px;
+}
+section#plattegrond .loodsen .loods .map .company .display h1 {
+  font-size: 36px;
+  letter-spacing: 1.6px;
+  padding-bottom: 20px;
   text-align: center;
-  line-height: 400px;
-  font-size: 20px;
+}
+section#plattegrond .loodsen .loods .map .company .display .slick-slide img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 /***
