@@ -64,7 +64,7 @@ var Methods = {
 			for (var i = 0; i < companies.length; i++) {
 				var companyContainer = $('.'+companies[i].tag);
 				// companyContainer.toggle( "highlight" );
-				companyContainer.effect("highlight", {}, 10000);
+				// companyContainer.effect("highlight", {}, 10000);
 
 				companyContainer.addClass('highlight');
 				console.log(companyContainer);

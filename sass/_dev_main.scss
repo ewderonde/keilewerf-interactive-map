@@ -161,14 +161,35 @@ section#plattegrond {
 	    z-index: 2;
 	    width: 1200px;
 	    margin: 0 auto;
-	    padding-top: 50px;
 	    input {
 	        padding: 15px 15px;
     		font-size: 20px;
 		    border-radius: 4px !important;
 		    width: 100%;
 		    box-sizing: border-box;
+		    margin-top: 50px;
 	    }
+	    #selected-tag {
+            position: absolute;
+		    top: 50px;
+		    padding: 15px;
+		    width: 100%;
+		    background: #27ae60;
+		    border-radius: 4px;
+		    color: #fff;
+		    font-size: 20px;
+		    box-sizing: border-box;
+		    line-height: 27px;
+		    #reset-search {
+		    	img {
+				    cursor: pointer;
+				    height: 18px;
+				    width: 18px;
+				    margin-left: 8px;
+				    vertical-align: middle;
+				}
+			}
+		}
 	}
 	.loodsen {
 	    position: relative;
@@ -193,10 +214,16 @@ section#plattegrond {
 	   			justify-content: space-between;
 	   			flex-flow: row wrap;
 			    .company {
-				    background: crimson;
+				    background: #c0392b;
 				    width: 18%;
 				    height: 50px;
-				    cursor: pointer;
+				    cursor: pointer;				    
+				    transition: background 0.6s ease 0.1s;
+				    &.highlight {
+					    background: #27ae60 !important;
+					    transition: background 0.6s ease 0.1s;
+					    opacity: 1 !important;
+					}
 				}
 			}
 			.company-opacity {
