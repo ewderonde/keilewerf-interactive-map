@@ -938,7 +938,23 @@ section#plattegrond .loodsen .loods .map .company {
   height: 50px;
   cursor: pointer;
 }
-section#plattegrond .loodsen .loods .map .company .display {
+section#plattegrond .loodsen .loods .company-opacity {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0.5;
+  display: none;
+  cursor: pointer;
+}
+section#plattegrond .loodsen .loods .company-contents {
+  position: relative;
+  z-index: 2;
+}
+section#plattegrond .loodsen .loods .company-contents .display {
   display: none;
   position: fixed;
   background: #fff;
@@ -953,17 +969,37 @@ section#plattegrond .loodsen .loods .map .company .display {
   border-radius: 4px;
   cursor: auto;
 }
-section#plattegrond .loodsen .loods .map .company .display .company-logo {
+section#plattegrond .loodsen .loods .company-contents .display .close-display {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #e24f49;
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  cursor: pointer;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-logo {
   display: block;
   margin: 0 auto 40px;
+  width: 250px;
+  object-fit: cover;
+  height: 250px;
 }
-section#plattegrond .loodsen .loods .map .company .display h1 {
+section#plattegrond .loodsen .loods .company-contents .display h1 {
   font-size: 36px;
   letter-spacing: 1.6px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   text-align: center;
 }
-section#plattegrond .loodsen .loods .map .company .display .slick-slide img {
+section#plattegrond .loodsen .loods .company-contents .display p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+section#plattegrond .loodsen .loods .company-contents .display .slick-slider {
+  margin-bottom: 0px;
+}
+section#plattegrond .loodsen .loods .company-contents .display .slick-slider .slick-slide img {
   display: block;
   width: 100%;
   height: 400px;
