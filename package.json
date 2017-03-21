@@ -1,0 +1,27 @@
+{
+  "name": "keilewerf-map",
+  "version": "1.0.0",
+  "description": "Interactive map for the Keilewerf in Rotterdam",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewderonde/keilewerf-interactive-map.git"
+  },
+  "author": "Sven de Ronde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewderonde/keilewerf-interactive-map/issues"
+  },
+  "homepage": "https://github.com/ewderonde/keilewerf-interactive-map#readme"
+}
