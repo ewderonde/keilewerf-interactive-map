@@ -51,8 +51,21 @@ var Methods = {
 		} else {
 			console.log('same category as last time, no need to highlight');
 		}
-
+	},
+	setSearchTag: function (tag) {
+		$('#tag').html('Resultaten voor: ' + tag);
+		$('#selected-tag').removeClass('hidden');
+	},
+	resetSearchTag: function () {
+		var $selectedTag = $('#selected-tag');
+		$selectedTag.addClass('hidden');
+		Methods.resetHighlights();
+	},
+	resetHighlights: function () {
+		var $companies = $('.company');
+		$companies.removeClass('highlight');
 	}
+
 };
 
 var categories = [
@@ -74,6 +87,8 @@ $('#autocomplete').autocomplete({
 	noSuggestionNotice: 'Geen resultaten',
 	showNoSuggestionNotice: true,
 	onSelect: function (suggestion) {
+		$('#autocomplete').val('');
+		Methods.setSearchTag(suggestion.value);
 		$.ajax({
 			type: "POST",
 			url: BASE_URL+'/php/search.php',
