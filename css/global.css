@@ -783,7 +783,7 @@ a {
   color: #333;
   text-decoration: none;
   outline: 0;
-  transition: all 0.3s ease 0.1s;
+  transition: all 0.5s ease 0.1s;
 }
 
 a:hover {
@@ -911,15 +911,18 @@ section#plattegrond .loodsen {
   display: flex;
   justify-content: space-between;
 }
+section#plattegrond .loodsen .loods {
+  width: 100%;
+}
 section#plattegrond .loodsen .loods h2 {
   font-size: 20px;
   text-align: center;
   margin-bottom: 30px;
 }
 section#plattegrond .loodsen .loods .map {
-  width: 400px;
+  width: 100%;
   background: #fff;
-  height: 400px;
+  height: 600px;
   border-radius: 4px;
 }
 section#plattegrond .loodsen .loods:nth-child(2) .map {

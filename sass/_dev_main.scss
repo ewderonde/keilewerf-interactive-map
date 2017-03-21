@@ -52,7 +52,7 @@ a{
 	color: $pri-color;
 	text-decoration: none;
 	outline: 0;
-	transition: all 0.3s ease 0.1s;
+	transition: all 0.5s ease 0.1s;
 }
 a:hover{
 	text-decoration: none;
@@ -176,15 +176,16 @@ section#plattegrond {
 	    display: flex;
 	    justify-content: space-between;
 	    .loods {
+	    	width: 100%;
 	    	h2 {
 	    		font-size: 20px;
 		    	text-align: center;
 		    	margin-bottom: 30px;
 	    	}
 	    	.map {
-			    width: 400px;
+			    width: 100%;
 			    background: #fff;
-			    height: 400px;
+			    height: 600px;
 			    border-radius: 4px;
 			}
 		    &:nth-child(2) {
