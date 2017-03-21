@@ -76,7 +76,7 @@ $('#autocomplete').autocomplete({
 	onSelect: function (suggestion) {
 		$.ajax({
 			type: "POST",
-			url: '/keilewerf/php/search.php',
+			url: BASE_URL+'/php/search.php',
 			data: {'search': suggestion.value },
 			success: function (result) {
 				console.log(result);
