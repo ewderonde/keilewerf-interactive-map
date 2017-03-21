@@ -59,7 +59,10 @@ var Methods = {
 	},
 	highlightCompanies: function (companies) {
 		if(currentCategory != lastCategory) {
-			$('.company').removeClass('highlight');
+			Methods.resetHighlights();
+
+			// Give all companies opacity 0.2;
+			$('.company').css('opacity','0.4');
 
 			for (var i = 0; i < companies.length; i++) {
 				var companyContainer = $('.'+companies[i].tag);
@@ -91,6 +94,7 @@ var Methods = {
 	resetHighlights: function () {
 		var $companies = $('.company');
 		$companies.removeClass('highlight');
+		$companies.css('opacity','1');
 	}
 
 };
