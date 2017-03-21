@@ -1,11 +1,10 @@
 $(document).ready(init);
-
+var currentCategory = '';
+var lastCategory = '-';
 
 function init() {
-	console.log('init');
-
 	// Set eventlisteners on company elements.
-	Company.setEventListeners();
+	Methods.setEventListeners();
 
 	$('.plattegrond').click(function(){
 		$('#plattegrond').fadeIn("slow");
@@ -14,16 +13,16 @@ function init() {
 }
 
 
-var Company = {
+var Methods = {
 	setEventListeners: function() {
 		// Event listener for showing info.
 		$('.company').on('click', function() {
 			Company.toggleInfo($(this));
-		})
+		});
 
 		// Event listener for hiding info.
 		$('.company .close').on('click', function() {
-			Company.hideInfo($(this).closest('.company'));
+			Methods.hideInfo($(this).closest('.company'));
 		})
 	},
 	create: function ($el, options) {
@@ -32,16 +31,73 @@ var Company = {
 	},
 	toggleInfo: function ($el) {
 		// Show popup info.
-		let hiddenContent = $el.find('.hidden-content');
+		var hiddenContent = $el.find('.hidden-content');
 		hiddenContent.toggleClass('hide');
 	},
 	hideInfo: function ($el) {
 		// Hide popup info.
 		$el.find('.hidden-content').hide();
 	},
-	highlightCompany: function ($el) {
+	highlightCompanies: function (companies) {
+		if(currentCategory != lastCategory) {
+			for (var i = 0; i < companies.length; i++) {
+				var companyContainer = $('.'+companies[i].tag);
+				// companyContainer.toggle( "highlight" );
+				companyContainer.effect("highlight", {}, 10000);
+				console.log(companyContainer);
+			}
+
+			lastCategory = currentCategory;
+		} else {
+			console.log('same category as last time, no need to highlight');
+		}
 
 	}
-}
+};
+
+var categories = [
+	{'value': 'hout', 'data': 'hout'},
+	{'value': 'meubels', 'data': 'hout'},
+	{'value': 'tafels', 'data': 'hout'},
+	{'value': 'surfplank', 'data': 'hout'},
+	{'value': 'fietsen', 'data': 'hout'},
+	{'value': 'metaal', 'data': 'hout'},
+	{'value': 'houtbewerking', 'data': 'hout'},
+	{'value': 'staal', 'data': 'hout'},
+	{'value': 'design', 'data': 'hout'},
+	{'value': 'stof', 'data': 'hout'}
+];
+
+$('#autocomplete').autocomplete({
+	lookup: categories,
+	autoSelectFirst: true,
+	noSuggestionNotice: 'Geen resultaten',
+	showNoSuggestionNotice: true,
+	onSelect: function (suggestion) {
+		$.ajax({
+			type: "POST",
+			url: '/keilewerf/php/search.php',
+			data: {'search': suggestion.value },
+			success: function (result) {
+				console.log(result);
+				currentCategory = suggestion.value;
+
+				if(result.data.length > 0){
+					console.log('Zoekresultaten voor ' + suggestion.value + ':');
+					for (var i = 0; i < result.data.length; i++) {
+						console.log(result.data[i].name);
+					}
+
+					Methods.highlightCompanies(result.data);
+				} else {
+					console.log('Geen bedrijven die voldoen aan de criteria.');
+				}
+			},
+			error: function(result) {
+				console.log(result);
+			}
+		});
+	}
+});
 
 
