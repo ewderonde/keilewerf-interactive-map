@@ -783,6 +783,7 @@ a {
   color: #333;
   text-decoration: none;
   outline: 0;
+  transition: all 0.3s ease 0.1s;
 }
 
 a:hover {
