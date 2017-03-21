@@ -10,6 +10,16 @@ function init() {
 		$('#plattegrond').fadeIn("slow");
 		$('#welcome').fadeOut("fast");
 	});
+
+	$('.company.man-van-hout').click(function(){
+		$('.company.man-van-hout .display').fadeIn();
+		$('.slider').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 5000,
+		});
+	});
 }
 
 
@@ -17,7 +27,7 @@ var Methods = {
 	setEventListeners: function() {
 		// Event listener for showing info.
 		$('.company').on('click', function() {
-			Company.toggleInfo($(this));
+			Methods.toggleInfo($(this));
 		});
 
 		// Event listener for hiding info.
