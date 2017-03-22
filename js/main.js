@@ -169,7 +169,12 @@ var categories = [
 	{'value': 'Assymetree', 'data': 'hout'},
 	{'value': 'Bouwer', 'data': 'hout'},
 	{'value': 'Hokori', 'data': 'hout'},
-	{'value': 'Studio Lentekind', 'data': 'hout'}
+	{'value': 'Studio Lentekind', 'data': 'hout'},
+	{'value': 'Staalslagerij', 'data': 'hout'},
+	{'value': 'Man van Hout', 'data': 'hout'},
+	{'value': "Beerda's Timmerwerk", 'data': 'hout'},
+	{'value': 'Magic Designz', 'data': 'hout'}
+
 ];
 
 $('#autocomplete').autocomplete({

@@ -15,7 +15,7 @@ class Repository
     }
 
     public function getCompanies() {
-        $query = "SELECT company.id, company.name, company.present, company.tag, company.warehouse_number FROM company";
+        $query = "SELECT company.id, company.name, company.present, company.tag, company.warehouse_number FROM company ORDER BY company.name ASC";
 
         $mysqli = mysqli_query($this->config, $query);
         $rawCompanyData = [];

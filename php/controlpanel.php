@@ -32,7 +32,15 @@ $companies = $repository->getCompanies();
         </form>
 
         <style>
-            .mobile-button { width: 100%; display:block;
+            .mobile-button {
+                width: 24%;
+                display: block;
+                margin: 0.5% 0.5%;
+            }
+            form {
+                display: flex;
+                flex-flow: row wrap;
+            }
         </style>
     </body>
 </html>
