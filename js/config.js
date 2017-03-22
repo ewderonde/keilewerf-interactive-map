@@ -1,1 +1,1 @@
-var BASE_URL = '/keilewerf';
+var BASE_URL = '/interactive-map';

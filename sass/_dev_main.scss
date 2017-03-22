@@ -201,7 +201,8 @@ section#plattegrond {
 		    width: 100%;
 		    box-sizing: border-box;
 		    margin-top: 30px;
-  		  	height: 57px;
+  		  	height: 57px;  		  	
+    		border: none;
 	    }
 	    #selected-tag {
             position: absolute;
@@ -402,7 +403,7 @@ section#plattegrond {
 						left: 365px;
     					border-left: none;
 					}
-					&.beerda-timmerwerken {
+					&.beerda-timmerwerk {
 					    width: 150px;
 					    height: 50px;
 					    top: 110px;
@@ -505,6 +506,67 @@ section#plattegrond {
 						height: 75px;
 						top: 100px;
 						left: 735px;
+					}
+					&.buurman {
+						width: 120px;
+						height: 345px;
+						top: 215px;
+						left: 735px;
+					    border-top: 1px solid rgba(0, 0, 0, 0.3); 
+						&.extra {
+							height: 41px;
+							width: 60px;
+							top: 175px;
+							left: 735px;
+    						border-bottom: none;
+						    border-top: none;
+						}
+						&.two {
+							height: 150px;
+							width: 120px;
+							top: 615px;
+							left: 735px;
+							border-top: 1px solid rgba(0, 0, 0, 0.3); 
+						}
+						&.three {
+							height: 150px;
+							width: 25px;
+							top: 615px;
+							left: 860px;
+						}
+					}
+					&.guyot-duquesnoy {
+						width: 45px;
+						height: 85px;
+						top: 90px;
+						left: 860px;
+						border-top: 1px solid rgba(0, 0, 0, 0.3); 
+					}
+					&.buro-van-wieren {
+						width: 110px;
+						height: 100px;
+						top: 240px;
+						left: 860px;
+						border-top: 1px solid rgba(0, 0, 0, 0.3); 
+						&.extra {
+						    width: 60px;
+						    height: 26px;
+						    top: 215px;
+						    left: 860px;
+						    border-bottom: none;
+						}
+					}
+					&.just-just {
+						width: 100px;
+						height: 80px;
+						top: 340px;
+						left: 860px;
+					}
+					&.studio-jom-heidekamp {
+						width: 140px;
+						height: 140px;
+						top: 420px;
+						left: 860px;
 					}
 				}
 			}
