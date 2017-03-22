@@ -200,12 +200,12 @@ section#plattegrond {
 		    border-radius: 4px !important;
 		    width: 100%;
 		    box-sizing: border-box;
-		    margin-top: 50px;
+		    margin-top: 30px;
   		  	height: 57px;
 	    }
 	    #selected-tag {
             position: absolute;
-		    top: 50px;
+		    top: 30px;
 		    padding: 15px;
 		    width: 100%;
 		    background: #27ae60;
@@ -235,7 +235,7 @@ section#plattegrond {
 	    position: relative;
 	    z-index: 2;
 	    width: 1200px;
-	    margin: 100px auto 0;
+	    margin: 25px auto 0;
 	    display: flex;
 	    justify-content: space-between;
 	    .loods {
@@ -243,7 +243,7 @@ section#plattegrond {
 	    	h2 {
 	    		font-size: 20px;
 		    	text-align: center;
-		    	margin-bottom: 30px;
+		    	margin-bottom: 25px;
 	    	}
 	    	.map {
 			    width: 100%;
@@ -272,7 +272,6 @@ section#plattegrond {
     					line-height: 18px;
 					}
 				    &.highlight {
-					    background: #27ae60 !important;
 					    transition: background 0.6s ease 0.1s;
 					    opacity: 1 !important;
 					}
@@ -395,6 +394,117 @@ section#plattegrond {
 						height: 90px;
 						top: 675px;
 						left: 220px;
+					}
+					&.joost-goudriaan {
+						width: 150px;
+						height: 95px;
+						top: 0px;
+						left: 365px;
+    					border-left: none;
+					}
+					&.beerda-timmerwerken {
+					    width: 150px;
+					    height: 50px;
+					    top: 110px;
+					    left: 365px;
+					    border-top: 1px solid rgba(0, 0, 0, 0.3);
+					    border-left: none;
+					    &.two {
+					    	width: 150px;
+						    height: 100px;
+						    top: 160px;
+						    left: 365px;
+						    border-top: none;
+					    }
+					}
+					&.staalslagerij {
+						width: 150px;
+					    height: 160px;
+					    top: 260px;
+					    left: 365px;
+					    border-left: none;
+					}
+					&.weller-design {
+						width: 150px;
+					    height: 50px;
+					    top: 420px;
+					    left: 365px;
+					    border-left: none;
+					}
+					&.sanitair {
+						width: 140px;
+					    height: 50px;
+					    top: 490px;
+					    left: 365px;
+					    border-left: none;
+					    border-top: 1px solid rgba(0, 0, 0, 0.3);
+					}
+					&.pixelbar {
+					    width: 175px;
+					    height: 150px;
+					    top: 615px;
+					    left: 365px;
+					    border-left: none;
+					    border-top: 1px solid rgba(0, 0, 0, 0.3);
+					}
+					&.letolab {
+				        width: 85px;
+					    height: 50px;
+					    top: 615px;
+					    left: 455px;
+					    border-top: 1px solid rgba(0, 0, 0, 0.3);
+					}
+					&.project-ruimte {
+					    width: 125px;
+					    height: 150px;
+					    top: 615px;
+					    left: 560px;
+					    border-top: 1px solid rgba(0, 0, 0, 0.3);
+					}
+					&.studio-selma-hamstra {
+				        width: 45px;
+					    height: 150px;
+					    top: 615px;
+					    left: 685px;
+					    border-top: 1px solid rgba(0, 0, 0, 0.3);
+					    border-left: none;
+					}
+					&.man-van-hout {
+				        width: 150px;
+					    height: 300px;
+					    top: 0;
+					    left: 580px;
+					}
+					&.rinke-van-wilegen {
+				        width: 150px;
+					    height: 80px;
+					    top: 300px;
+					    left: 580px;
+					}
+					&.ton-van-gilst-design {
+				        width: 150px;
+					    height: 65px;
+					    top: 380px;
+					    left: 580px;
+					}
+					&.gedeelde-machinale-werkplaats {
+			            width: 150px;
+					    height: 115px;
+					    top: 445px;
+					    left: 580px;
+					}
+					&.banana-bread {
+						width: 120px;
+						height: 100px;
+						top: 0;
+						border-top: none;
+						left: 735px;
+					}
+					&.give-a-bike-foundation {
+						width: 120px;
+						height: 75px;
+						top: 100px;
+						left: 735px;
 					}
 				}
 			}
