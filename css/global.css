@@ -945,6 +945,7 @@ section#plattegrond .header input {
   box-sizing: border-box;
   margin-top: 30px;
   height: 57px;
+  border: none;
 }
 section#plattegrond .header #selected-tag {
   position: absolute;
@@ -1147,7 +1148,7 @@ section#plattegrond .loodsen .loods .map .company.joost-goudriaan {
   left: 365px;
   border-left: none;
 }
-section#plattegrond .loodsen .loods .map .company.beerda-timmerwerken {
+section#plattegrond .loodsen .loods .map .company.beerda-timmerwerk {
   width: 150px;
   height: 50px;
   top: 110px;
@@ -1155,7 +1156,7 @@ section#plattegrond .loodsen .loods .map .company.beerda-timmerwerken {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-left: none;
 }
-section#plattegrond .loodsen .loods .map .company.beerda-timmerwerken.two {
+section#plattegrond .loodsen .loods .map .company.beerda-timmerwerk.two {
   width: 150px;
   height: 100px;
   top: 160px;
@@ -1250,6 +1251,67 @@ section#plattegrond .loodsen .loods .map .company.give-a-bike-foundation {
   height: 75px;
   top: 100px;
   left: 735px;
+}
+section#plattegrond .loodsen .loods .map .company.buurman {
+  width: 120px;
+  height: 345px;
+  top: 215px;
+  left: 735px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.buurman.extra {
+  height: 41px;
+  width: 60px;
+  top: 175px;
+  left: 735px;
+  border-bottom: none;
+  border-top: none;
+}
+section#plattegrond .loodsen .loods .map .company.buurman.two {
+  height: 150px;
+  width: 120px;
+  top: 615px;
+  left: 735px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.buurman.three {
+  height: 150px;
+  width: 25px;
+  top: 615px;
+  left: 860px;
+}
+section#plattegrond .loodsen .loods .map .company.guyot-duquesnoy {
+  width: 45px;
+  height: 85px;
+  top: 90px;
+  left: 860px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.buro-van-wieren {
+  width: 110px;
+  height: 100px;
+  top: 240px;
+  left: 860px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.buro-van-wieren.extra {
+  width: 60px;
+  height: 26px;
+  top: 215px;
+  left: 860px;
+  border-bottom: none;
+}
+section#plattegrond .loodsen .loods .map .company.just-just {
+  width: 100px;
+  height: 80px;
+  top: 340px;
+  left: 860px;
+}
+section#plattegrond .loodsen .loods .map .company.studio-jom-heidekamp {
+  width: 140px;
+  height: 140px;
+  top: 420px;
+  left: 860px;
 }
 section#plattegrond .loodsen .loods .company-opacity {
   background: #000000;
