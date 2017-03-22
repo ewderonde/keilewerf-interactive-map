@@ -12,10 +12,17 @@ $config = new Config();
 $repository = new Repository($config->connection());
 
 $companies = $repository->getCompanies();
-// $searchTest = $repository->search('design');
-// $toggleTest = $repository->togglePresentStatus(1);
 
+function utf8ize($d) {
+    if (is_array($d)) {
+        foreach ($d as $k => $v) {
+            $d[$k] = utf8ize($v);
+        }
+    } else if (is_string ($d)) {
+        return utf8_encode($d);
+    }
+    return $d;
+}
 
 header('Content-Type: application/json');
-echo json_encode($companies);
-die();
+echo json_encode(utf8ize($companies));
