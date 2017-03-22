@@ -11,10 +11,11 @@ function init() {
 		$('#welcome').fadeOut("fast");
 	});
 
-	$('.company.man-van-hout').click(function(){
+	$(document).on('click', '.company', function(){
 		$('.company-opacity').fadeIn();
-		$('.display.man-van-hout').fadeIn();
-		$('.slider').slick({
+		var tagName = $(this).data('tag');
+		$('.display.'+tagName).fadeIn();
+		$('.display.'+tagName+ ' .slider').slick({
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  autoplay: true,
@@ -22,8 +23,9 @@ function init() {
 		});
 	});
 
+	//SVEN OPTIMALISEREN VOOR CURRENT OPENEND PANEL
 	$('.close-display, .company-opacity').on('click', function(){
-		$('.display.man-van-hout').fadeOut();
+		$('.display').fadeOut();
 		$('.company-opacity').fadeOut();
 	});
 
