@@ -943,12 +943,12 @@ section#plattegrond .header input {
   border-radius: 4px !important;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 30px;
   height: 57px;
 }
 section#plattegrond .header #selected-tag {
   position: absolute;
-  top: 50px;
+  top: 30px;
   padding: 15px;
   width: 100%;
   background: #27ae60;
@@ -977,7 +977,7 @@ section#plattegrond .loodsen {
   position: relative;
   z-index: 2;
   width: 1200px;
-  margin: 100px auto 0;
+  margin: 25px auto 0;
   display: flex;
   justify-content: space-between;
 }
@@ -987,7 +987,7 @@ section#plattegrond .loodsen .loods {
 section#plattegrond .loodsen .loods h2 {
   font-size: 20px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 section#plattegrond .loodsen .loods .map {
   width: 100%;
@@ -1018,7 +1018,6 @@ section#plattegrond .loodsen .loods .map .company span {
   line-height: 18px;
 }
 section#plattegrond .loodsen .loods .map .company.highlight {
-  background: #27ae60 !important;
   transition: background 0.6s ease 0.1s;
   opacity: 1 !important;
 }
@@ -1140,6 +1139,117 @@ section#plattegrond .loodsen .loods .map .company.john-wood-cases {
   height: 90px;
   top: 675px;
   left: 220px;
+}
+section#plattegrond .loodsen .loods .map .company.joost-goudriaan {
+  width: 150px;
+  height: 95px;
+  top: 0px;
+  left: 365px;
+  border-left: none;
+}
+section#plattegrond .loodsen .loods .map .company.beerda-timmerwerken {
+  width: 150px;
+  height: 50px;
+  top: 110px;
+  left: 365px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: none;
+}
+section#plattegrond .loodsen .loods .map .company.beerda-timmerwerken.two {
+  width: 150px;
+  height: 100px;
+  top: 160px;
+  left: 365px;
+  border-top: none;
+}
+section#plattegrond .loodsen .loods .map .company.staalslagerij {
+  width: 150px;
+  height: 160px;
+  top: 260px;
+  left: 365px;
+  border-left: none;
+}
+section#plattegrond .loodsen .loods .map .company.weller-design {
+  width: 150px;
+  height: 50px;
+  top: 420px;
+  left: 365px;
+  border-left: none;
+}
+section#plattegrond .loodsen .loods .map .company.sanitair {
+  width: 140px;
+  height: 50px;
+  top: 490px;
+  left: 365px;
+  border-left: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.pixelbar {
+  width: 175px;
+  height: 150px;
+  top: 615px;
+  left: 365px;
+  border-left: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.letolab {
+  width: 85px;
+  height: 50px;
+  top: 615px;
+  left: 455px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.project-ruimte {
+  width: 125px;
+  height: 150px;
+  top: 615px;
+  left: 560px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#plattegrond .loodsen .loods .map .company.studio-selma-hamstra {
+  width: 45px;
+  height: 150px;
+  top: 615px;
+  left: 685px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: none;
+}
+section#plattegrond .loodsen .loods .map .company.man-van-hout {
+  width: 150px;
+  height: 300px;
+  top: 0;
+  left: 580px;
+}
+section#plattegrond .loodsen .loods .map .company.rinke-van-wilegen {
+  width: 150px;
+  height: 80px;
+  top: 300px;
+  left: 580px;
+}
+section#plattegrond .loodsen .loods .map .company.ton-van-gilst-design {
+  width: 150px;
+  height: 65px;
+  top: 380px;
+  left: 580px;
+}
+section#plattegrond .loodsen .loods .map .company.gedeelde-machinale-werkplaats {
+  width: 150px;
+  height: 115px;
+  top: 445px;
+  left: 580px;
+}
+section#plattegrond .loodsen .loods .map .company.banana-bread {
+  width: 120px;
+  height: 100px;
+  top: 0;
+  border-top: none;
+  left: 735px;
+}
+section#plattegrond .loodsen .loods .map .company.give-a-bike-foundation {
+  width: 120px;
+  height: 75px;
+  top: 100px;
+  left: 735px;
 }
 section#plattegrond .loodsen .loods .company-opacity {
   background: #000000;
