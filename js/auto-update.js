@@ -15,7 +15,7 @@ var renderCompanies = function (companies) {
     console.log('Refresh.');
     var data = companies;
     for(var i = 0; i < data.length; i++) {
-        var target = $('.'+data[i].tag);
+        var target = $('.company.'+data[i].tag);
         if(data[i].present == 1) {
             target.css('background-color', '#27ae60');
         } else {
