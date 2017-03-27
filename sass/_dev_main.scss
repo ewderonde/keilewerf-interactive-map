@@ -209,9 +209,9 @@ section#plattegrond {
 		    top: 30px;
 		    padding: 15px;
 		    width: 100%;
-		    background: #27ae60;
+		    background: #fff;
 		    border-radius: 4px;
-		    color: #fff;
+		    color: #333;
 		    font-size: 20px;
 		    box-sizing: border-box;
 		    line-height: 27px;
@@ -667,6 +667,7 @@ section#plattegrond {
 					    background-color: #ccc;
     					background: repeating-linear-gradient( 45deg, #ccc, #ccc 10px, #ddd 10px, #ddd 20px );
 					    border-bottom: none;
+					    pointer-events: none;
 					    &.two {
 						    width: 220px;
 						    height: 15px;
