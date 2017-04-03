@@ -232,6 +232,10 @@ section#plattegrond {
 			}
 		}
 	}
+	.warehouse-navbar {
+	    position: absolute;
+	    z-index: 2;
+	}
 	.loodsen {
 	    position: relative;
 	    z-index: 2;
