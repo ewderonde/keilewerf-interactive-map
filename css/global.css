@@ -974,6 +974,10 @@ section#plattegrond .header #selected-tag #reset-search img {
   position: absolute;
   transform: translateY(-50%);
 }
+section#plattegrond .warehouse-navbar {
+  position: absolute;
+  z-index: 2;
+}
 section#plattegrond .loodsen {
   position: relative;
   z-index: 2;
