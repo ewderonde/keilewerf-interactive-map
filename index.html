@@ -36,8 +36,13 @@
                     </span>
                 </div>
             </div>
+
+            <div class="warehouse-navbar">
+                <div id="warehouse-one-tab" data-tag=".warehouse-one" ><h2 style="cursor:pointer;">Keilewerf 1</h2></div>
+                <div id="warehouse-two-tab" data-tag=".warehouse-two"><h2 style="cursor:pointer;">Keilewerf 2</h2></div>
+            </div>
             <div class="loodsen">
-                <div class="loods">
+                <div class="loods warehouse-one">
                     <h2>Keilewerf 1</h2>
                     <div class="map">
                         <div class="company bende" data-tag="bende"><span>Bende</span></div>
@@ -918,6 +923,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="loods warehouse-two hidden">
+                    <h2>Keilewerf 2</h2>
+                    <div class="map">
+                        <div class="company bende" data-tag="bende"><span>Bende</span></div>
+                        <div class="company bende two" data-tag="bende"><span>Bende</span></div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="footer"></section>
@@ -930,4 +943,5 @@
     <script src="./js/config.js"></script>
     <script src="./js/main.js" type="text/javascript"></script>
     <script src="./js/auto-update.js" type="text/javascript"></script>
+    <script src="./js/availabilitySocket.js" type="text/javascript"></script>
 </html>
