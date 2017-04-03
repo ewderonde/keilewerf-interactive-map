@@ -56,6 +56,7 @@ class Repository
         while($row = mysqli_fetch_assoc($mysqli)){
             $rows[] = $row;
         }
+
         // return rows.
         return $rows;
     }
