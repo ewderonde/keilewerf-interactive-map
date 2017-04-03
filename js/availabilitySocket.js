@@ -23,13 +23,13 @@
 // }
 
 
-console.log('Availability Socket.');
+// console.log('Availability Socket.');
 
-var conn = new WebSocket('ws://localhost/keilewerf-map/php/AvailabilityCheck.php');
-conn.onopen = function(e) {
-    console.log("Connection established!");
-};
+// var conn = new WebSocket('ws://localhost/keilewerf-map/php/AvailabilityCheck.php');
+// conn.onopen = function(e) {
+//     console.log("Connection established!");
+// };
 
-conn.onmessage = function(e) {
-    console.log(e.data);
-};
+// conn.onmessage = function(e) {
+//     console.log(e.data);
+// };
