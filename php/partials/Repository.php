@@ -48,7 +48,7 @@ class Repository
     }
 
     public function search($q) {
-        $query = "SELECT DISTINCT company.name, company.tag, company.warehouse_number FROM company LEFT JOIN company_has_category ON company.id = company_has_category.company_id RIGHT JOIN category ON company_has_category.category_id = category.id
+        $query = "SELECT DISTINCT company.id, company.name, company.tag, company.warehouse_number, company.present FROM company LEFT JOIN company_has_category ON company.id = company_has_category.company_id RIGHT JOIN category ON company_has_category.category_id = category.id
                   WHERE category.name LIKE '%$q%' OR company.name LIKE '%$q%'";
 
         $mysqli = mysqli_query($this->config, $query);
