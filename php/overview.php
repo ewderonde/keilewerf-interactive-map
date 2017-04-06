@@ -24,11 +24,13 @@ $companies = $repository->getCompanies();
     </title>
 </head>
     <body>
-        
+        <a href="company-admin.php">terug naar beheerpagina</a>
+        <form>
             <?php foreach($companies as $company) {
                 $class = ($company['present'] == 1)? 'btn-success' : 'btn-danger'; ?>
                 <div class="btn <?=$class . ' '. $company['tag'] ?> btn-xs-block mobile-button" name="<?= $company['id'] ?>" style="pointer-events: none;"><?= $company['name'] ?> </div>
             <?php } ?>
+        </form>
         <style>
             .mobile-button {
                 width: 24%;

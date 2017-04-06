@@ -76,7 +76,18 @@ class Repository
         $company = mysqli_fetch_assoc($mysqli);
 
         $status = ($company['present'] == 1)? 0 : 1;
-        var_dump($status);
+
+        $updateQuery = "UPDATE company SET present = '$status' WHERE id = $id ";
+        mysqli_query($this->config, $updateQuery);
+        return null;
+    }
+
+    public function toggleStatusAjax($id) {
+        $query = "SELECT present FROM company WHERE id = $id";
+        $mysqli = mysqli_query($this->config, $query);
+        $company = mysqli_fetch_assoc($mysqli);
+
+        $status = ($company['present'] == 1)? 0 : 1;
 
         $updateQuery = "UPDATE company SET present = '$status' WHERE id = $id ";
         mysqli_query($this->config, $updateQuery);

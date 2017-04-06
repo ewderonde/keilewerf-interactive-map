@@ -1,17 +1,20 @@
 <?php
+	session_start();
+	if(isset($_SESSION['loggedIn'])) {
+		header('location: company-admin.php');
+	}
 	$message = '';
 	if(isset($_POST['email']) && isset($_POST['password'])){
 		$email = $_POST['email' ];
 		$password = $_POST['password'];
 
-		if ($email = 'benda@keilewerf.nl' && $password = '1234') {
+		if ($email == 'bende@keilewerf.nl' && $password == '1234') {
+			$_SESSION['loggedIn'] = true;
 			header('location: company-admin.php');
+		} else {
+			$message = 'Uw wachtwoord of gebruikersnaam is onjuist.';
 		}
-	}else {
-		$message = 'Uw wachtwoord of gebruikersnaam is onjuist.';
 	}
-
-
 ?>
 
 

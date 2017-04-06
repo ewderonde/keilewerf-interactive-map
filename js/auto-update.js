@@ -17,9 +17,9 @@ var renderCompanies = function (companies) {
     for(var i = 0; i < data.length; i++) {
         var target = $('.company.'+data[i].tag);
         if(data[i].present == 1) {
-            // target.css('background-color', '#27ae60');
+            target.css('background-color', '#27ae60');
         } else {
-            // target.css('background-color', '#c0392b');
+            target.css('background-color', '#c0392b');
         }
     }
 };

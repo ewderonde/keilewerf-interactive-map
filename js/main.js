@@ -128,7 +128,7 @@ var categories = [
 	{'value': 'Meesterlijk Stofferen', 'data': 'hout'},
 	{'value': 'Verbaasde Ree', 'data': 'hout'},
 	{'value': 'United Enterprises', 'data': 'hout'},
-	{'value': 'Dansvloer', 'data': 'hout'},
+	{'value': 'Dansvoer', 'data': 'hout'},
 	{'value': 'In Scene Gezet', 'data': 'hout'},
 	{'value': 'Studio Met', 'data': 'hout'},
 	{'value': 'A69 Design', 'data': 'hout'},
@@ -139,7 +139,6 @@ var categories = [
 	{'value': 'Van Gilst Design', 'data': 'hout'},
 	{'value': 'Buurman', 'data': 'hout'},
 	{'value': 'Guyot Duquesnoy', 'data': 'hout'},
-	{'value': 'Buurman', 'data': 'hout'},
 	{'value': 'Buro van Wieren', 'data': 'hout'},
 	{'value': 'Barmhart Sound', 'data': 'hout'},
 	{'value': 'Friends of the Family', 'data': 'hout'},
@@ -172,8 +171,12 @@ var categories = [
 	{'value': 'Studio Lentekind', 'data': 'hout'},
 	{'value': 'Staalslagerij', 'data': 'hout'},
 	{'value': 'Man van Hout', 'data': 'hout'},
-	{'value': "Beerda's Timmerwerk", 'data': 'hout'},
-	{'value': 'Magic Designz', 'data': 'hout'}
+	{'value': "Beerdas Timmerwerken", 'data': 'hout'},
+	{'value': 'Magic Designz', 'data': 'hout'},
+	{'value': 'John Wood Cases', 'data': 'hout'},
+	{'value': 'Ton van Gilst Design', 'data': 'hout'},
+	{'value': 'Studio Selma Hamstra', 'data': 'hout'},
+
 
 ];
 
