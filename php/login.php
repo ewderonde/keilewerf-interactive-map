@@ -65,6 +65,12 @@
 		    cursor: pointer;
 		    font-family: sans-serif;
 		}
+		.validation-message {
+		    color: #e74c3c;
+		    font-size: 14px;
+		    font-family: sans-serif;
+		    text-align: center;
+		}
 	</style>
 </head>
 <body>
@@ -79,9 +85,9 @@
 		<input type="password" name="password" autocomplete="off" class="form-control">
 	</div>
 	<input type="submit" value="login" class="btn btn-success">
+	<div class="validation-message">
+		<p><?php echo $message;  ?></p>
+	</div>
 </form>
-<div class="validation-message">
-	<p><?php echo $message  ?></p>
-</div>
 </body>
 </html>
