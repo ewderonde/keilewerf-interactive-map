@@ -235,6 +235,12 @@ section#plattegrond {
 	.warehouse-navbar {
 	    position: absolute;
 	    z-index: 2;
+        display: flex;
+   	 	justify-content: space-around;
+   		width: 100%;
+   		h2 {
+		    font-size: 20px;
+   		}	
 	}
 	.loodsen {
 	    position: relative;
@@ -254,6 +260,7 @@ section#plattegrond {
 			    width: 100%;
 			    background: #656565;
 			    height: 765px;
+			    margin-top: 50px;
 			    border-radius: 4px;
    				position: relative;
 			    font-size: 12px;
@@ -801,6 +808,136 @@ section#plattegrond {
 					}
 			    }
 			}
+			&.warehouse-two {
+				.map {
+					clip-path: none;
+					-webkit-clip-path: none;
+				    width: 850px;
+				    height: 760px;
+    				margin: 50px auto 0;
+    				.company {
+    					width: 170px;
+    					height: 95px;
+    					&.vrij-houden {
+							top: 0;
+							left: 0;
+							border-radius: 4px 0 0 0;
+							background: #1abc9c;
+    					}
+    					&.optie {
+    						top: 95px;
+    						left: 0;
+    						background: #1abc9c;
+    						&.two {
+								top: 190px;
+    						}
+    						&.three {
+								top: 285px;
+    						}
+    						&.four {
+								top: 380px;
+    						}
+    						&.five {
+								top: 475px;
+    						}
+    						&.six {
+								top: 570px;
+    						}
+    						&.seven {
+								top: 665px;
+    						}
+    						&.eigth {
+								top: 195px;
+    							left: 255px;
+    						}
+    						&.nine {
+								top: 290px;
+    							left: 255px;
+    						}
+    						&.ten {
+								top: 385px;
+    							left: 255px;
+    						}
+    						&.eleven {
+								top: 480px;
+    							left: 255px;
+    						}
+    						&.twelve {
+								top: 575px;
+    							left: 255px;
+    						}
+    						&.thirteen {
+    							left: 680px;
+    							top: 0;
+    							background: #f1c40f;
+    						}
+    					}
+    					&.sappbar {
+    						width: 340px;
+    						height: 50px;
+    						top: 50px;
+    						left: 255px;
+    						background: #1abc9c;
+    					}
+    					&.reizende-tentoonstelling {
+    						top: 100px;
+    						left: 255px;    						
+    						background: #1abc9c;
+    					}
+    					&.tijdelijk {
+    						left:425px;
+    						top:100px;
+    						border-left: none;
+    						background: #f1c40f;
+    						&.two {
+								top: 195px;
+    						}
+    						&.three {
+								top: 290px;
+    						}
+    						&.four {
+								top: 385px;
+    						}
+    					}
+    					&.bende {
+    						top: 480px;
+    						left: 425px;
+    						border-left: none;
+    						background: #f1c40f;
+    						&.two {
+	 						top: 575px;
+    						}
+    					}
+    					&.tiny-house-academy {
+    						top: 95px;
+    						left: 680px;    						
+    						background: #f1c40f;
+    						&.two {
+								top: 190px;
+    						}
+    					}
+    					&.bouwakademie {
+    						left: 680px;
+    						top: 285px;
+    						background: #f1c40f;
+    						&.two {
+    							top: 380px;
+    						}
+    						&.three {
+    							top: 475px;
+    						}
+    						&.four {
+    							top: 570px;
+    						}
+    					}
+    					&.oppervlak {
+    						top: 665px;
+    						left: 680px;    						
+    						background: #f1c40f;
+    					}
+    				}
+				}
+			}	    
 	    }
 	}
 }

@@ -977,6 +977,12 @@ section#plattegrond .header #selected-tag #reset-search img {
 section#plattegrond .warehouse-navbar {
   position: absolute;
   z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+section#plattegrond .warehouse-navbar h2 {
+  font-size: 20px;
 }
 section#plattegrond .loodsen {
   position: relative;
@@ -998,6 +1004,7 @@ section#plattegrond .loodsen .loods .map {
   width: 100%;
   background: #656565;
   height: 765px;
+  margin-top: 50px;
   border-radius: 4px;
   position: relative;
   font-size: 12px;
@@ -1541,6 +1548,134 @@ section#plattegrond .loodsen .loods .company-contents .display .slick-slider .sl
   width: 100%;
   height: 400px;
   object-fit: cover;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map {
+  clip-path: none;
+  -webkit-clip-path: none;
+  width: 850px;
+  height: 760px;
+  margin: 50px auto 0;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company {
+  width: 170px;
+  height: 95px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.vrij-houden {
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 0;
+  background: #1abc9c;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie {
+  top: 95px;
+  left: 0;
+  background: #1abc9c;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.two {
+  top: 190px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.three {
+  top: 285px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.four {
+  top: 380px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.five {
+  top: 475px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.six {
+  top: 570px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.seven {
+  top: 665px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.eigth {
+  top: 195px;
+  left: 255px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.nine {
+  top: 290px;
+  left: 255px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.ten {
+  top: 385px;
+  left: 255px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.eleven {
+  top: 480px;
+  left: 255px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.twelve {
+  top: 575px;
+  left: 255px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.thirteen {
+  left: 680px;
+  top: 0;
+  background: #f1c40f;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.sappbar {
+  width: 340px;
+  height: 50px;
+  top: 50px;
+  left: 255px;
+  background: #1abc9c;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.reizende-tentoonstelling {
+  top: 100px;
+  left: 255px;
+  background: #1abc9c;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.tijdelijk {
+  left: 425px;
+  top: 100px;
+  border-left: none;
+  background: #f1c40f;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.tijdelijk.two {
+  top: 195px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.tijdelijk.three {
+  top: 290px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.tijdelijk.four {
+  top: 385px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.bende {
+  top: 480px;
+  left: 425px;
+  border-left: none;
+  background: #f1c40f;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.bende.two {
+  top: 575px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.tiny-house-academy {
+  top: 95px;
+  left: 680px;
+  background: #f1c40f;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.tiny-house-academy.two {
+  top: 190px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.bouwakademie {
+  left: 680px;
+  top: 285px;
+  background: #f1c40f;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.bouwakademie.two {
+  top: 380px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.bouwakademie.three {
+  top: 475px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.bouwakademie.four {
+  top: 570px;
+}
+section#plattegrond .loodsen .loods.warehouse-two .map .company.oppervlak {
+  top: 665px;
+  left: 680px;
+  background: #f1c40f;
 }
 
 /***
