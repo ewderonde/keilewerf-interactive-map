@@ -78,7 +78,7 @@ $companies = $repository->getCompanies();
 </head>
     <body>
         <div class="information">
-            <a href="company-admin.php">terug naar beheerpagina</a>
+            <a href="company-admin.php">Terug naar beheerpagina</a>
             <form>
                 <?php foreach($companies as $company) {
                     $class = ($company['present'] == 1)? 'btn-success' : 'btn-danger'; ?>
