@@ -1450,6 +1450,7 @@ section#plattegrond .loodsen .loods .map .company.entree {
   top: 685px;
   left: 980px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
+  background: #2c3e50;
 }
 section#plattegrond .loodsen .loods .map .company.outside {
   width: 120px;
