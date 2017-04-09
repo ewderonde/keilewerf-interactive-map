@@ -1022,7 +1022,7 @@ section#plattegrond .loodsen .loods .map .company {
   border-top: none;
   position: absolute;
   top: -100px;
-  background-color: #27ae60;
+  background-color: #ccc;
 }
 section#plattegrond .loodsen .loods .map .company span {
   position: absolute;
@@ -1035,13 +1035,48 @@ section#plattegrond .loodsen .loods .map .company.highlight {
   transition: background 0.6s ease 0.1s;
   opacity: 1 !important;
 }
+section#plattegrond .loodsen .loods .map .company.orange {
+  background-color: #e67e22;
+}
+section#plattegrond .loodsen .loods .map .company.orange.offline {
+  background: repeating-linear-gradient(45deg, #e67e22, #e67e22 10px, #d35400 10px, #d35400 20px);
+}
+section#plattegrond .loodsen .loods .map .company.purple {
+  background-color: #9b59b6;
+}
+section#plattegrond .loodsen .loods .map .company.purple.offline {
+  background: repeating-linear-gradient(45deg, #9b59b6, #9b59b6 10px, #8e44ad 10px, #8e44ad 20px);
+}
+section#plattegrond .loodsen .loods .map .company.green {
+  background-color: #27ae60;
+}
+section#plattegrond .loodsen .loods .map .company.green.offline {
+  background: repeating-linear-gradient(45deg, #27ae60, #27ae60 10px, #2ecc71 10px, #2ecc71 20px);
+}
+section#plattegrond .loodsen .loods .map .company.blue {
+  background-color: #3498db;
+}
+section#plattegrond .loodsen .loods .map .company.blue.offline {
+  background: repeating-linear-gradient(45deg, #3498db, #3498db 10px, #2980b9 10px, #2980b9 20px);
+}
+section#plattegrond .loodsen .loods .map .company.yellow {
+  background-color: #f1c40f;
+}
+section#plattegrond .loodsen .loods .map .company.yellow.offline {
+  background: repeating-linear-gradient(45deg, #f1c40f, #f1c40f 10px, #f39c12 10px, #f39c12 20px);
+}
+section#plattegrond .loodsen .loods .map .company.mint {
+  background-color: #1abc9c;
+}
+section#plattegrond .loodsen .loods .map .company.mint.offline {
+  background: repeating-linear-gradient(45deg, #1abc9c, #1abc9c 10px, #16a085 10px, #16a085 20px);
+}
 section#plattegrond .loodsen .loods .map .company.bende {
   width: 170px;
   height: 120px;
   top: 0;
   left: 0;
   border-radius: 4px 0 0 0;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.bende.two {
   width: 170px;
@@ -1055,42 +1090,36 @@ section#plattegrond .loodsen .loods .map .company.spacecreators {
   height: 60px;
   top: 120px;
   left: 0;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.magic-designz {
   width: 140px;
   height: 80px;
   top: 180px;
   left: 0;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.meesterlijk-stofferen {
   width: 140px;
   height: 80px;
   top: 260px;
   left: 0;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.verbaasde-ree {
   width: 140px;
   height: 120px;
   top: 340px;
   left: 0;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.united-enterprises {
   width: 140px;
   height: 80px;
   top: 460px;
   left: 0;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.mobile-escape-room {
   width: 140px;
   height: 100px;
   top: 565px;
   left: 0;
-  background: #9b59b6;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 section#plattegrond .loodsen .loods .map .company.event-motor-company {
@@ -1098,7 +1127,6 @@ section#plattegrond .loodsen .loods .map .company.event-motor-company {
   height: 100px;
   top: 665px;
   left: 0;
-  background: #9b59b6;
 }
 section#plattegrond .loodsen .loods .map .company.dansvoer {
   width: 155px;
@@ -1106,56 +1134,48 @@ section#plattegrond .loodsen .loods .map .company.dansvoer {
   top: 110px;
   left: 210px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.in-scene-gezet {
   width: 155px;
   height: 50px;
   top: 160px;
   left: 210px;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.puk-bresser {
   width: 155px;
   height: 50px;
   top: 210px;
   left: 210px;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.studio-met {
   width: 155px;
   height: 50px;
   top: 260px;
   left: 210px;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.a-design {
   width: 155px;
   height: 50px;
   top: 310px;
   left: 210px;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.carlo-walter {
   width: 155px;
   height: 50px;
   top: 360px;
   left: 210px;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.funkie {
   width: 155px;
   height: 100px;
   top: 410px;
   left: 210px;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.alex-zaagt {
   width: 155px;
   height: 50px;
   top: 510px;
   left: 210px;
-  background: #e67e22;
 }
 section#plattegrond .loodsen .loods .map .company.edutones {
   width: 145px;
@@ -1163,14 +1183,12 @@ section#plattegrond .loodsen .loods .map .company.edutones {
   top: 615px;
   left: 220px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  background: #9b59b6;
 }
 section#plattegrond .loodsen .loods .map .company.john-wood-cases {
   width: 145px;
   height: 90px;
   top: 675px;
   left: 220px;
-  background: #9b59b6;
 }
 section#plattegrond .loodsen .loods .map .company.joost-goudriaan {
   width: 150px;
@@ -1178,7 +1196,6 @@ section#plattegrond .loodsen .loods .map .company.joost-goudriaan {
   top: 0px;
   left: 365px;
   border-left: none;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.beerda-timmerwerk {
   width: 150px;
@@ -1187,7 +1204,6 @@ section#plattegrond .loodsen .loods .map .company.beerda-timmerwerk {
   left: 365px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-left: none;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.beerda-timmerwerk.two {
   width: 150px;
@@ -1202,7 +1218,6 @@ section#plattegrond .loodsen .loods .map .company.staalslagerij {
   top: 260px;
   left: 365px;
   border-left: none;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.weller-design {
   width: 150px;
@@ -1210,7 +1225,6 @@ section#plattegrond .loodsen .loods .map .company.weller-design {
   top: 420px;
   left: 365px;
   border-left: none;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.sanitair {
   width: 140px;
@@ -1218,7 +1232,6 @@ section#plattegrond .loodsen .loods .map .company.sanitair {
   top: 490px;
   left: 365px;
   border-left: none;
-  background: #2ecc71;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 section#plattegrond .loodsen .loods .map .company.sanitair.two {
@@ -1227,7 +1240,6 @@ section#plattegrond .loodsen .loods .map .company.sanitair.two {
   top: 490px;
   border-top: none;
   left: 1110px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.pixelbar {
   width: 175px;
@@ -1236,7 +1248,6 @@ section#plattegrond .loodsen .loods .map .company.pixelbar {
   left: 365px;
   border-left: none;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  background: #9b59b6;
 }
 section#plattegrond .loodsen .loods .map .company.letolab {
   width: 85px;
@@ -1244,7 +1255,6 @@ section#plattegrond .loodsen .loods .map .company.letolab {
   top: 615px;
   left: 455px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  background: #9b59b6;
 }
 section#plattegrond .loodsen .loods .map .company.project-ruimte {
   width: 125px;
@@ -1252,7 +1262,6 @@ section#plattegrond .loodsen .loods .map .company.project-ruimte {
   top: 615px;
   left: 560px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  background: #9b59b6;
 }
 section#plattegrond .loodsen .loods .map .company.studio-selma-hamstra {
   width: 45px;
@@ -1261,35 +1270,30 @@ section#plattegrond .loodsen .loods .map .company.studio-selma-hamstra {
   left: 685px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-left: none;
-  background: #9b59b6;
 }
 section#plattegrond .loodsen .loods .map .company.man-van-hout {
   width: 150px;
   height: 300px;
   top: 0;
   left: 580px;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.rinke-van-wilegen {
   width: 150px;
   height: 80px;
   top: 300px;
   left: 580px;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.ton-van-gilst-design {
   width: 150px;
   height: 65px;
   top: 380px;
   left: 580px;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.gedeelde-machinale-werkplaats {
   width: 150px;
   height: 115px;
   top: 445px;
   left: 580px;
-  background: #2ecc71;
 }
 section#plattegrond .loodsen .loods .map .company.banana-bread {
   width: 120px;
@@ -1297,21 +1301,18 @@ section#plattegrond .loodsen .loods .map .company.banana-bread {
   top: 0;
   border-top: none;
   left: 735px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.give-a-bike-foundation {
   width: 120px;
   height: 75px;
   top: 100px;
   left: 735px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.buurman {
   width: 120px;
   height: 345px;
   top: 215px;
   left: 735px;
-  background: #3498db;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 section#plattegrond .loodsen .loods .map .company.buurman.extra {
@@ -1350,14 +1351,12 @@ section#plattegrond .loodsen .loods .map .company.guyot-duquesnoy {
   top: 90px;
   left: 860px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.buro-van-wieren {
   width: 110px;
   height: 100px;
   top: 240px;
   left: 860px;
-  background: #3498db;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 section#plattegrond .loodsen .loods .map .company.buro-van-wieren.extra {
@@ -1372,14 +1371,12 @@ section#plattegrond .loodsen .loods .map .company.just-just {
   height: 80px;
   top: 340px;
   left: 860px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.studio-jom-heidekamp {
   width: 140px;
   height: 140px;
   top: 420px;
   left: 860px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.studio-jom-heidekamp span {
   top: 20%;
@@ -1389,7 +1386,6 @@ section#plattegrond .loodsen .loods .map .company.annette-vermeij {
   height: 85px;
   top: 475px;
   left: 860px;
-  background: #3498db;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 section#plattegrond .loodsen .loods .map .company.assy-metree {
@@ -1399,70 +1395,60 @@ section#plattegrond .loodsen .loods .map .company.assy-metree {
   left: 920px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-left: none;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.friends-of-the-family {
   width: 175px;
   height: 90px;
   top: 40px;
   left: 940px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.cosmic-carnaval {
   width: 190px;
   height: 80px;
   top: 130px;
   left: 940px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.bouwer {
   width: 145px;
   height: 70px;
   top: 210px;
   left: 995px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.sil-krol {
   width: 105px;
   height: 75px;
   top: 280px;
   left: 1050px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.art-in-marble {
   width: 115px;
   height: 55px;
   top: 355px;
   left: 1050px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.hokori {
   width: 125px;
   height: 80px;
   top: 410px;
   left: 1050px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.studio-lentekind {
   width: 140px;
   height: 50px;
   top: 510px;
   left: 1050px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.gemeenschappelijke-keuken {
   width: 110px;
   height: 90px;
   top: 560px;
   left: 1090px;
-  background: #3498db;
 }
 section#plattegrond .loodsen .loods .map .company.entree {
   width: 100px;
   height: 65px;
   top: 685px;
   left: 980px;
-  background: #2c3e50;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 section#plattegrond .loodsen .loods .map .company.outside {
@@ -1564,12 +1550,10 @@ section#plattegrond .loodsen .loods.warehouse-two .map .company.vrij-houden {
   top: 0;
   left: 0;
   border-radius: 4px 0 0 0;
-  background: #1abc9c;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.optie {
   top: 95px;
   left: 0;
-  background: #1abc9c;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.two {
   top: 190px;
@@ -1612,25 +1596,21 @@ section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.twelve {
 section#plattegrond .loodsen .loods.warehouse-two .map .company.optie.thirteen {
   left: 680px;
   top: 0;
-  background: #f1c40f;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.sappbar {
   width: 340px;
   height: 50px;
   top: 50px;
   left: 255px;
-  background: #1abc9c;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.reizende-tentoonstelling {
   top: 100px;
   left: 255px;
-  background: #1abc9c;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.tijdelijk {
   left: 425px;
   top: 100px;
   border-left: none;
-  background: #f1c40f;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.tijdelijk.two {
   top: 195px;
@@ -1645,7 +1625,6 @@ section#plattegrond .loodsen .loods.warehouse-two .map .company.bende {
   top: 480px;
   left: 425px;
   border-left: none;
-  background: #f1c40f;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.bende.two {
   top: 575px;
@@ -1653,7 +1632,6 @@ section#plattegrond .loodsen .loods.warehouse-two .map .company.bende.two {
 section#plattegrond .loodsen .loods.warehouse-two .map .company.tiny-house-academy {
   top: 95px;
   left: 680px;
-  background: #f1c40f;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.tiny-house-academy.two {
   top: 190px;
@@ -1661,7 +1639,6 @@ section#plattegrond .loodsen .loods.warehouse-two .map .company.tiny-house-acade
 section#plattegrond .loodsen .loods.warehouse-two .map .company.bouwakademie {
   left: 680px;
   top: 285px;
-  background: #f1c40f;
 }
 section#plattegrond .loodsen .loods.warehouse-two .map .company.bouwakademie.two {
   top: 380px;
@@ -1675,7 +1652,8 @@ section#plattegrond .loodsen .loods.warehouse-two .map .company.bouwakademie.fou
 section#plattegrond .loodsen .loods.warehouse-two .map .company.oppervlak {
   top: 665px;
   left: 680px;
-  background: #f1c40f;
+  background: #95a5a6;
+  pointer-events: none;
 }
 
 /***

@@ -277,7 +277,7 @@ section#plattegrond {
     				border-top: none;
 				    position: absolute;
     				top: -100px;
-    				background-color: #27ae60;
+    				background-color: #ccc;
     				span {
 					    position: absolute;
 					    top: 50%;
@@ -289,13 +289,66 @@ section#plattegrond {
 					    transition: background 0.6s ease 0.1s;
 					    opacity: 1 !important;
 					}
+					&.orange {			
+    					background-color: #e67e22;
+						&.offline {
+    						background: repeating-linear-gradient(
+    							45deg, #e67e22, #e67e22 10px,
+    							 #d35400 10px, #d35400 20px
+							);
+						}
+					}
+					&.purple {
+    					background-color: #9b59b6;
+						&.offline {
+							background: repeating-linear-gradient(
+    							45deg, #9b59b6, #9b59b6 10px,
+    							 #8e44ad 10px, #8e44ad 20px
+							);
+						}
+					}
+					&.green {
+    					background-color: #27ae60;
+						&.offline {
+							background: repeating-linear-gradient(
+    							45deg, #27ae60, #27ae60 10px,
+    							 #2ecc71 10px, #2ecc71 20px
+							);
+						}
+					}
+					&.blue {
+    					background-color: #3498db;
+						&.offline {
+							background: repeating-linear-gradient(
+    							45deg, #3498db, #3498db 10px,
+    							 #2980b9 10px, #2980b9 20px
+							);
+						}
+					}
+					&.yellow {
+    					background-color: #f1c40f;
+						&.offline {
+							background: repeating-linear-gradient(
+    							45deg, #f1c40f, #f1c40f 10px,
+    							 #f39c12 10px, #f39c12 20px
+							);
+						}
+					}
+					&.mint {
+    					background-color: #1abc9c;
+						&.offline {
+							background: repeating-linear-gradient(
+    							45deg, #1abc9c, #1abc9c 10px,
+    							 #16a085 10px, #16a085 20px
+							);
+						}
+					}
 					&.bende {
 						width: 170px;
 						height: 120px;
 						top: 0;
 						left: 0;
    						border-radius: 4px 0 0 0;
-   						background: #e67e22;
 						&.two {
 							width: 170px;
 							height: 95px;
@@ -309,42 +362,36 @@ section#plattegrond {
 						height: 60px;
 						top: 120px;
 						left: 0;
-						background: #e67e22;
 					}
 					&.magic-designz {
 						width: 140px;
 						height: 80px;
 						top: 180px;
 						left: 0;
-						background: #e67e22;
 					}
 					&.meesterlijk-stofferen {
 						width: 140px;
 						height: 80px;
 						top: 260px;
 						left: 0;
-						background: #e67e22;
 					}
 					&.verbaasde-ree {
 						width: 140px;
 						height: 120px;
 						top: 340px;
 						left: 0;
-						background: #e67e22;
 					}
 					&.united-enterprises {
 						width: 140px;
 						height: 80px;
 						top: 460px;
 						left: 0;
-						background: #e67e22;
 					}
 					&.mobile-escape-room {
 						width: 140px;
 						height: 100px;
 						top: 565px;
 						left: 0;
-						background: #9b59b6;
 						border-top: 1px solid rgba(0,0,0,0.3);
 					}
 					&.event-motor-company {
@@ -352,7 +399,6 @@ section#plattegrond {
 						height: 100px;
 						top: 665px;
 						left: 0;
-						background: #9b59b6;
 					}
 					&.dansvoer {
 						width: 155px;
@@ -360,21 +406,18 @@ section#plattegrond {
 						top: 110px;
 						left: 210px;
 						border-top: 1px solid rgba(0,0,0,0.3);
-						background: #e67e22;
 					}
 					&.in-scene-gezet {
 						width: 155px;
 						height: 50px;
 						top: 160px;
 						left: 210px;
-						background: #e67e22;
 					}
 					&.puk-bresser {
 						width: 155px;
 						height: 50px;
 						top: 210px;
 						left: 210px;
-						background: #e67e22;
 					}
 
 					&.studio-met {
@@ -382,35 +425,30 @@ section#plattegrond {
 						height: 50px;
 						top: 260px;
 						left: 210px;
-						background: #e67e22;
 					}
 					&.a-design {
 						width: 155px;
 						height: 50px;
 						top: 310px;
 						left: 210px;
-						background: #e67e22;
 					}
 					&.carlo-walter {
 						width: 155px;
 						height: 50px;
 						top: 360px;
 						left: 210px;
-						background: #e67e22;
 					}
 					&.funkie {
 						width: 155px;
 						height: 100px;
 						top: 410px;
 						left: 210px;
-						background: #e67e22;
 					}
 					&.alex-zaagt {
 						width: 155px;
 						height: 50px;
 						top: 510px;
 						left: 210px;
-						background: #e67e22;
 					}
 					&.edutones {
 						width: 145px;
@@ -418,14 +456,12 @@ section#plattegrond {
 						top: 615px;
 						left: 220px;						
 						border-top: 1px solid rgba(0,0,0,0.3);
-						background: #9b59b6;
 					}
 					&.john-wood-cases {
 						width: 145px;
 						height: 90px;
 						top: 675px;
 						left: 220px;
-						background: #9b59b6;
 					}
 					&.joost-goudriaan {
 						width: 150px;
@@ -433,7 +469,6 @@ section#plattegrond {
 						top: 0px;
 						left: 365px;
     					border-left: none;
-    					background: #2ecc71;
 					}
 					&.beerda-timmerwerk {
 					    width: 150px;
@@ -442,7 +477,6 @@ section#plattegrond {
 					    left: 365px;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
 					    border-left: none;
-					    background: #2ecc71;
 					    &.two {
 					    	width: 150px;
 						    height: 100px;
@@ -457,7 +491,6 @@ section#plattegrond {
 					    top: 260px;
 					    left: 365px;
 					    border-left: none;
-					    background: #2ecc71;
 					}
 					&.weller-design {
 						width: 150px;
@@ -465,7 +498,6 @@ section#plattegrond {
 					    top: 420px;
 					    left: 365px;
 					    border-left: none;
-					    background: #2ecc71;
 					}
 					&.sanitair {
 						width: 140px;
@@ -473,15 +505,13 @@ section#plattegrond {
 					    top: 490px;
 					    left: 365px;
 					    border-left: none;
-					    background: #2ecc71;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
 					    &.two {
 				    	    width: 70px;
 						    height: 20px;
 						    top: 490px;
 						    border-top: none;
-						    left: 1110px;						    
-					    	background: #3498db;
+						    left: 1110px;			
 					    }
 					}
 					&.pixelbar {
@@ -491,7 +521,6 @@ section#plattegrond {
 					    left: 365px;
 					    border-left: none;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
-						background: #9b59b6;
 					}
 					&.letolab {
 				        width: 85px;
@@ -499,7 +528,6 @@ section#plattegrond {
 					    top: 615px;
 					    left: 455px;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
-						background: #9b59b6;
 					}
 					&.project-ruimte {
 					    width: 125px;
@@ -507,7 +535,6 @@ section#plattegrond {
 					    top: 615px;
 					    left: 560px;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
-						background: #9b59b6;
 					}
 					&.studio-selma-hamstra {
 				        width: 45px;
@@ -516,35 +543,30 @@ section#plattegrond {
 					    left: 685px;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
 					    border-left: none;
-						background: #9b59b6;
 					}
 					&.man-van-hout {
 				        width: 150px;
 					    height: 300px;
 					    top: 0;
 					    left: 580px;
-					    background: #2ecc71;
 					}
 					&.rinke-van-wilegen {
 				        width: 150px;
 					    height: 80px;
 					    top: 300px;
 					    left: 580px;
-					    background: #2ecc71;
 					}
 					&.ton-van-gilst-design {
 				        width: 150px;
 					    height: 65px;
 					    top: 380px;
 					    left: 580px;
-					    background: #2ecc71;
 					}
 					&.gedeelde-machinale-werkplaats {
 			            width: 150px;
 					    height: 115px;
 					    top: 445px;
 					    left: 580px;
-					    background: #2ecc71;
 					}
 					&.banana-bread {
 						width: 120px;
@@ -552,21 +574,18 @@ section#plattegrond {
 						top: 0;
 						border-top: none;
 						left: 735px;
-						background: #3498db;
 					}
 					&.give-a-bike-foundation {
 						width: 120px;
 						height: 75px;
 						top: 100px;
 						left: 735px;
-						background: #3498db;
 					}
 					&.buurman {
 						width: 120px;
 						height: 345px;
 						top: 215px;
 						left: 735px;
-					    background: #3498db;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3); 
 						&.extra {
 							height: 41px;
@@ -605,14 +624,12 @@ section#plattegrond {
 						top: 90px;
 						left: 860px;
 						border-top: 1px solid rgba(0, 0, 0, 0.3); 
-						background: #3498db;
 					}
 					&.buro-van-wieren {
 						width: 110px;
 						height: 100px;
 						top: 240px;
 						left: 860px;
-						background: #3498db;
 						border-top: 1px solid rgba(0, 0, 0, 0.3); 
 						&.extra {
 						    width: 60px;
@@ -627,14 +644,12 @@ section#plattegrond {
 						height: 80px;
 						top: 340px;
 						left: 860px;
-						background: #3498db;
 					}
 					&.studio-jom-heidekamp {
 						width: 140px;
 						height: 140px;
 						top: 420px;
 						left: 860px;
-						background: #3498db;
 						span {
 							top: 20%;
 						}
@@ -644,7 +659,6 @@ section#plattegrond {
 					    height: 85px;
 					    top: 475px;
 					    left: 860px;
-					    background: #3498db;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
 					}
 					&.assy-metree {
@@ -654,70 +668,60 @@ section#plattegrond {
 					    left: 920px;
 					    border-top: 1px solid rgba(0, 0, 0, 0.3);
 				        border-left: none;
-				        background: #3498db;
 					}
 					&.friends-of-the-family {
 					    width: 175px;
 					    height: 90px;
 					    top: 40px;
 					    left: 940px;
-					    background: #3498db;
 					}
 					&.cosmic-carnaval {
 					    width: 190px;
 					    height: 80px;
 					    top: 130px;
 					    left: 940px;
-					    background: #3498db;
 					}
 					&.bouwer {
 					    width: 145px;
 					    height: 70px;
 					    top: 210px;
 					    left: 995px;
-					    background: #3498db;
 					}
 					&.sil-krol {
 					    width: 105px;
 					    height: 75px;
 					    top: 280px;
 					    left: 1050px;
-					    background: #3498db;
 					}
 					&.art-in-marble {
 					    width: 115px;
 					    height: 55px;
 					    top: 355px;
 					    left: 1050px;
-					    background: #3498db;
 					}
 					&.hokori {
 					    width: 125px;
 					    height: 80px;
 					    top: 410px;
 					    left: 1050px;
-					    background: #3498db;
 					}
 					&.studio-lentekind {
 					    width: 140px;
 					    height: 50px;
 					    top: 510px;
 					    left: 1050px;
-					    background: #3498db;
 					}
 					&.gemeenschappelijke-keuken {
 					    width: 110px;
 					    height: 90px;
 					    top: 560px;
 					    left: 1090px;
-					    background: #3498db;
 					}
 					&.entree {
 				        width: 100px;
 					    height: 65px;
 					    top: 685px;
 					    left: 980px;
-					    background: #2c3e50;
 					    border-top: 1px solid rgba(0,0,0,0.3);
 					}
 					&.outside {
@@ -822,12 +826,10 @@ section#plattegrond {
 							top: 0;
 							left: 0;
 							border-radius: 4px 0 0 0;
-							background: #1abc9c;
     					}
     					&.optie {
     						top: 95px;
     						left: 0;
-    						background: #1abc9c;
     						&.two {
 								top: 190px;
     						}
@@ -869,7 +871,6 @@ section#plattegrond {
     						&.thirteen {
     							left: 680px;
     							top: 0;
-    							background: #f1c40f;
     						}
     					}
     					&.sappbar {
@@ -877,18 +878,15 @@ section#plattegrond {
     						height: 50px;
     						top: 50px;
     						left: 255px;
-    						background: #1abc9c;
     					}
     					&.reizende-tentoonstelling {
     						top: 100px;
-    						left: 255px;    						
-    						background: #1abc9c;
+    						left: 255px;    		
     					}
     					&.tijdelijk {
     						left:425px;
     						top:100px;
     						border-left: none;
-    						background: #f1c40f;
     						&.two {
 								top: 195px;
     						}
@@ -903,15 +901,13 @@ section#plattegrond {
     						top: 480px;
     						left: 425px;
     						border-left: none;
-    						background: #f1c40f;
     						&.two {
 	 						top: 575px;
     						}
     					}
     					&.tiny-house-academy {
     						top: 95px;
-    						left: 680px;    						
-    						background: #f1c40f;
+    						left: 680px;    		
     						&.two {
 								top: 190px;
     						}
@@ -919,7 +915,6 @@ section#plattegrond {
     					&.bouwakademie {
     						left: 680px;
     						top: 285px;
-    						background: #f1c40f;
     						&.two {
     							top: 380px;
     						}
@@ -933,7 +928,8 @@ section#plattegrond {
     					&.oppervlak {
     						top: 665px;
     						left: 680px;    						
-    						background: #f1c40f;
+    						background: #95a5a6;
+    						pointer-events: none;
     					}
     				}
 				}
