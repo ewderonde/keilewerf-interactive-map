@@ -1495,37 +1495,83 @@ section#plattegrond .loodsen .loods .company-contents .display {
   transform: translateY(-50%) translateX(-50%);
   width: 1200px;
   height: auto;
-  padding: 25px;
   box-sizing: border-box;
   border-radius: 4px;
   cursor: auto;
 }
 section#plattegrond .loodsen .loods .company-contents .display .close-display {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 40px;
+  top: 40px;
   background: #e24f49;
   width: 16px;
   height: 16px;
-  padding: 8px;
+  padding: 16px;
   cursor: pointer;
+  z-index: 10;
 }
-section#plattegrond .loodsen .loods .company-contents .display .company-logo {
+section#plattegrond .loodsen .loods .company-contents .display .company-content {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-content .contact-info {
+  margin-left: 95px;
+  margin-top: 100px;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-content .contact-info a {
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0 10px;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-content .company-logo {
   display: block;
-  margin: 0 auto 40px;
-  width: 250px;
-  object-fit: cover;
-  height: 250px;
+  margin: 0 auto 70px;
+  width: 300px;
+  object-fit: contain;
+  height: auto;
 }
-section#plattegrond .loodsen .loods .company-contents .display h1 {
+section#plattegrond .loodsen .loods .company-contents .display .company-content .information {
+  width: 550px;
+  padding: 70px;
+  box-sizing: border-box;
+  background: #fff;
+  top: 0;
+  margin-top: -190px;
+  z-index: 10;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-content .information h1 {
   font-size: 36px;
   letter-spacing: 1.6px;
+  font-weight: 900;
+  line-height: 40px;
   padding-bottom: 30px;
+  text-transform: uppercase;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-content .information p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-content .information .company-actions {
+  display: flex;
+}
+section#plattegrond .loodsen .loods .company-contents .display .company-content .information .company-actions a.button {
+  border: 1px solid #767676;
+  color: #767676;
+  background: #fff;
+  text-transform: uppercase;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.5s ease 0.1s;
+  margin-right: 15px;
+  min-width: 180px;
   text-align: center;
 }
-section#plattegrond .loodsen .loods .company-contents .display p {
-  font-size: 16px;
-  margin-bottom: 20px;
+section#plattegrond .loodsen .loods .company-contents .display .company-content .information .company-actions a.button:hover {
+  background: #767676;
+  color: #fff;
 }
 section#plattegrond .loodsen .loods .company-contents .display .slick-slider {
   margin-bottom: 0px;
